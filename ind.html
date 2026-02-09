@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Valentine Week of Love ❤️</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#ff758c, #ff7eb3);
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+.box {
+  background: rgba(255,255,255,0.2);
+  padding: 25px;
+  border-radius: 20px;
+  max-width: 500px;
+  margin: auto;
+}
+button {
+  background: white;
+  color: #ff4d6d;
+  border: none;
+  padding: 12px 22px;
+  margin-top: 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+button:hover {
+  background: #ffe6ea;
+}
+.hidden {
+  display: none;
+}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h1>💖 Valentine Week of Love 💖</h1>
+<p>Click & feel my love, one day at a time ❤️</p>
+
+<!-- Day 1 -->
+<div id="d1">
+  <h2>🌹 Rose Day</h2>
+  <p>
+    If I could give you one rose for every reason I love you,  
+    the whole world would be a garden 🌹
+  </p>
+  <button onclick="next('d1','d2')">Next 💕</button>
+</div>
+
+<!-- Day 2 -->
+<div id="d2" class="hidden">
+  <h2>💍 Propose Day</h2>
+  <p>
+    I don’t need a ring to choose you,  
+    my heart already did ❤️
+  </p>
+  <button onclick="next('d2','d3')">Next 💕</button>
+</div>
+
+<!-- Day 3 -->
+<div id="d3" class="hidden">
+  <h2>🍫 Chocolate Day</h2>
+  <p>
+    Life with you is sweeter than any chocolate 🍫  
+    and I crave you every day 💖
+  </p>
+  <button onclick="next('d3','d4')">Next 💕</button>
+</div>
+
+<!-- Day 4 -->
+<div id="d4" class="hidden">
+  <h2>🧸 Teddy Day</h2>
+  <p>
+    When I can’t hug you,  
+    I hug your thoughts instead 🧸
+  </p>
+  <button onclick="next('d4','d5')">Next 💕</button>
+</div>
+
+<!-- Day 5 -->
+<div id="d5" class="hidden">
+  <h2>🤝 Promise Day</h2>
+  <p>
+    I promise to stand by you,  
+    not just in love, but in life ❤️
+  </p>
+  <button onclick="next('d5','d6')">Next 💕</button>
+</div>
+
+<!-- Day 6 -->
+<div id="d6" class="hidden">
+  <h2>🤗 Hug Day</h2>
+  <p>
+    One hug from you  
+    can heal everything 🤗💖
+  </p>
+  <button onclick="next('d6','d7')">Next 💕</button>
+</div>
+
+<!-- Day 7 -->
+<div id="d7" class="hidden">
+  <h2>💋 Kiss Day</h2>
+  <p>
+    A kiss from you  
+    is my favorite feeling in the world 💋
+  </p>
+  <button onclick="next('d7','d8')">Final 💘</button>
+</div>
+
+<!-- Day 8 -->
+<div id="d8" class="hidden">
+  <h1>💘 Valentine’s Day 💘</h1>
+  <h2>Dharshan ❤️</h2>
+  <p>
+    You are my today,  
+    my tomorrow,  
+    and my forever 💖
+  </p>
+  <p>
+    Every heartbeat of mine  
+    whispers your name.
+  </p>
+  <h3>Happy Valentine’s Day, My Love 💕</h3>
+</div>
+
+</div>
+
+<script>
+function next(current, nextOne) {
+  document.getElementById(current).classList.add("hidden");
+  document.getElementById(nextOne).classList.remove("hidden");
+}
+</script>
+
+</body>
+</html>
